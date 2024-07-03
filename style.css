@@ -1,0 +1,204 @@
+/* reset css */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  font-family: 'Fira Code';
+}
+
+/* Header Start */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: #f0f0f0;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #030303;
+  gap: 10px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+header .logo:hover {
+  background: rgb(175, 179, 185);
+}
+header nav a {
+  text-decoration: none;
+  color: #030303;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+header nav a:hover {
+  background: rgb(175, 179, 185);
+}
+/* Header End */
+
+/* Home Start */
+.home {
+  width: 100%;
+  position: relative;
+}
+.home img {
+  width: 100%;
+}
+.home .description-image {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #f0f0f0;
+  font-size: 2.1rem;
+}
+.home .description-image h2 {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 14px;
+}
+/* Home End */
+
+/* Projects Start */
+.projects {
+  padding: 5rem 4%;
+}
+.projects p {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.projects .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.projects .container .box {
+  position: relative;
+}
+.projects .container .box img {
+  width: 100%;
+  background-size: cover;
+}
+.projects .container .box .name-img {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #f0f0f0;
+  padding: 4px;
+}
+/* Projects End */
+
+/* About Start */
+.about {
+  padding: 5rem 4%;
+  font-family: sans-serif;
+}
+.about .title {
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+.about .article {
+  font-size: 0.9rem;
+  padding-bottom: 1.5rem;
+}
+.about .person {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.about .person .box {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+.about .person img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.about .person .name-person {
+  font-weight: bold;
+}
+.about .person .title-person {
+  color: slategrey;
+  font-size: 0.8rem;
+  font-style: italic;
+  padding: 0.5rem 0;
+}
+.about .person .description-person {
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+.about .person .btn-person {
+  cursor: pointer;
+  padding: 6px 12px;
+  background: #030303;
+  color: #f0f0f0;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+/* About End */
+
+/* Contact Start */
+.contact {
+  padding: 5rem 4%;
+}
+.contact .title {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+.contact .description {
+  font-style: italic;
+  padding-bottom: 0.3rem;
+}
+.contact form input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.3rem;
+  margin-bottom: 1rem;
+}
+.contact form button {
+  font-size: 0.7rem;
+  padding: 0.5rem 0.8rem;
+  background: #030303;
+  border: none;
+  outline: none;
+  color: #f0f0f0;
+  box-shadow: 2px 2px 4px black;
+}
+/* Contact End */
+
+/* Footer Start */
+footer .maps img {
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+}
+footer .copyright {
+  text-align: center;
+  padding: 1rem;
+}
+footer .copyright p a {
+  color: slategrey;
+}
+/* Footer End */
